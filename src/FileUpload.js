@@ -35,11 +35,11 @@ const FileUpload = () => {
                         <header>
                             <h4>Select File here</h4>
                         </header>
-                        <p>Files Supported: .MP3</p>
+                        <p>Files Supported: .MP3 .MP4 .WAV</p>
                         <input
                             className="btn"
                             type="file"
-                            accept=".mp3"
+                            accept=".mp3,.mp4,.wav"
                             multiple
                             onChange={handleFileChange}
                         />
