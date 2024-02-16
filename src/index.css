@@ -17,6 +17,7 @@ code {
 
 .main-container h1 {
     text-align: center;
+    padding-top: 40px;
 }
 
 * {
@@ -33,6 +34,11 @@ code {
     display: flex;
     justify-content: center;
     background-color: #fcfcfc;
+}
+
+.res {
+    display: flex;
+    justify-content: center;
 }
 
 .card {

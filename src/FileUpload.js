@@ -2,18 +2,20 @@ import { useState } from "react";
 import axios from "axios";
 const FileUpload = () => {
     const [file, setFile] = useState(null);
+    const [htmlResponse, setHtmlResponse] = useState(null);
     const [selectedLanguage, setSelectedLanguage] = useState("English");
     const handleFileChange = (event) => {
         setFile(event.target.files[0]);
         //console.log(file);
     };
+    const [loader,setLoader] = useState(false);
 
     const handleLanguageChange = (event) => {
         setSelectedLanguage(event.target.value);
     };
     const handleSubmit = async (e) => {
         const data = new FormData();
-
+        setLoader(true);
         const config = {
             headers: {
                 "Content-Type": "multipart/form-data"
@@ -28,7 +30,8 @@ const FileUpload = () => {
             data,
             config
         );
-        console.log(response);
+        console.log(response.data);
+        setHtmlResponse(response.data);
     };    
 
     return (
@@ -76,6 +79,10 @@ const FileUpload = () => {
                     </div>
                 </div>
             </div>
+            {/* <div>
+                {htmlResponse}
+            </div> */}
+            {loader&&htmlResponse==null?<h1>Fetching Insights...</h1>:<div class="res" dangerouslySetInnerHTML={{ __html: htmlResponse }} />}
         </div>
     );
 };

@@ -3,7 +3,7 @@ import FileUpload from "./FileUpload";
 function App() {
     return (
         <div className="main-container">
-            <h1>Hacktivate 6.0</h1>
+            <h1>Multi-Lingual Call Analyser</h1>
             <FileUpload />
         </div>
     );
