@@ -48,7 +48,6 @@ const FileUpload = () => {
                             className="btn"
                             type="file"
                             accept=".mp3, .mp4, .wav"
-                            multiple
                             onChange={handleFileChange}
                         />
                         <div className="lang">
