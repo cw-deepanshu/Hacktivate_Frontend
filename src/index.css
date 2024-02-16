@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -17,28 +24,18 @@ code {
 
 .main-container h1 {
     text-align: center;
-    padding-top: 40px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #26a69a;
 }
 
 .container {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: #fcfcfc;
-}
-
-.res {
-    display: flex;
-    justify-content: center;
 }
 
 .card {
@@ -99,7 +96,13 @@ code {
 
 .submit {
     margin-top: 15px;
-    width: 100px;
+    background-color: #26a69a;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
 }
 
 label {
@@ -108,4 +111,9 @@ label {
 
 .lang {
     margin-top: 20px;
+}
+
+.res {
+    display: flex;
+    justify-content: center;
 }
