@@ -85,13 +85,6 @@ const FileUpload = () => {
             {/* <div>
                 {htmlResponse}
             </div> */}
-
-            <div
-                className="res"
-                dangerouslySetInnerHTML={{
-                    __html: '<div class="entities" style="line-height: 2.5; direction: ltr">Hello? Am I talking to Kayawali? I wanted to give a <mark class="entity" style="background: #7DF6D9; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">user review.<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">USERREVIEWS</span></mark></div>'
-                }}
-            />
             {loader && htmlResponse == null ? (
                 <h1>Fetching Insights...</h1>
             ) : (
